@@ -19,6 +19,27 @@
             
             <label for="Secret">Enter secret code:</label>
             <input type="password" name="Secret" placeholder="REMEMBER" size="40px" maxlength="40" id="Secret">
+            <br><br>
+            <label>Select a Service</label>
+            <select name="Service" id="Service">
+                <option value="Kill">Kill</option>
+                <option value="Steal">Steal</option>
+                <option value="Defame">Defame</option>
+            </select>
+            <br />
+            <p>Enter Payment details</p>
+            <label>Amount</label>
+            <input type="text" placeholder="Choose Wisely">
+            <br>
+            <input type="radio" name="payment" value="bitcoin"><label>Bitcoin</label><br>
+            <input type="radio" name="payment" value="etherium"><label>Etherium</label><br>
+            <p>Additional notes</p>
+            <textarea rows="5" cols="50" name="notes" id="notes" placeholder="Just tell me"></textarea>
+            <br>
+            <label>Remember me?<input type="checkbox" name="remember" checked="checked"></label>
+            <br>
+            <label>Recommend me?<input type="checkbox" name="recommend"></label>
+            <br><br>
             
             <input type="submit" value="Penetrate">
             
