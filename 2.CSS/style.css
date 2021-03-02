@@ -1,0 +1,32 @@
+h1{
+    color: blueviolet;
+}
+
+p{
+    color: cadetblue;
+    font-size: 150%;
+}
+
+/* ID can be changed using # and classes by . */ 
+
+#Boo{
+    color: chartreuse;
+    font-size: 200%;
+}
+
+.nice{
+    color: crimson;
+    font-family: 'Trebuchet MS';
+}
+
+.lime{
+    background-color:rgb(238, 255, 0);
+    color: blue;
+    height: 100px;
+    font-size: 110%;
+    width: auto;
+}
+
+#word{
+    color: red;
+}
