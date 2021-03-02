@@ -80,6 +80,7 @@ p{
 
 .imgbxt{
     background-image: url(images/aud.jpg);
+    width: auto;
     height: 200px;
     background-size: 100px 100px;
     background-origin: padding-box;
@@ -93,4 +94,46 @@ p{
 
 #word{
     color: red;
+}
+
+/* There are diff types of positionings and z index */
+/* you can use visibility attribute to hide stuff, will take space though */
+/* you can use display attribute to hide, space will be gone too. Set it to block */
+/* Display can also be used to display inline elements as block elements and vice versa */
+
+.txt{
+    padding: 1%;
+    height: 200px;
+    width: auto;
+    background-color: lightblue;
+    border: cadetblue 5px;
+    border-style: dashed;
+    margin: 1%;
+    float: left;
+}
+
+#un{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#dos{
+    font-size: 1.5em;
+    color: rebeccapurple;
+}
+#tres{
+    font-size: 1em;
+    font-style: italic;
+    color: seagreen;
+}
+#cuatro{
+    letter-spacing: 1em;
+}
+.cinco{
+    text-indent: 2em;
+}
+#seis{
+    text-shadow: 4px 4px 4px;
+}
+.siete{
+    text-indent: 250px;
 }
