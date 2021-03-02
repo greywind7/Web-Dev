@@ -27,6 +27,8 @@ p{
     font-size: 110%;
     width: auto;
     padding: 29px;
+    margin: 5% 1%;
+    border: 10px tomato ridge;
 }
 
 .gray{
@@ -34,11 +36,17 @@ p{
     height: auto;
     color: white;
     padding: 30px 10px;
+    border-width: 10px 15px 20px 25px;
+    border-color: teal salmon;
+    border-style: groove;
+    margin: 1%;
 }
 
 .pink{
     background-color: hotpink;
     padding: 47px 12px 23px 89px;
+    border: 20px black ridge;
+    border-radius: 13px;
 }
 
 /* Box Model
