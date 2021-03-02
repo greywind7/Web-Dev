@@ -5,6 +5,7 @@ h1{
 p{
     color: cadetblue;
     font-size: 150%;
+    margin: 0;
 }
 
 /* ID can be changed using # and classes by . */ 
@@ -22,10 +23,30 @@ p{
 .lime{
     background-color:rgb(238, 255, 0);
     color: blue;
-    height: 100px;
+    height: auto;
     font-size: 110%;
     width: auto;
+    padding: 29px;
 }
+
+.gray{
+    background-color: gray;
+    height: auto;
+    color: white;
+    padding: 30px 10px;
+}
+
+.pink{
+    background-color: hotpink;
+    padding: 47px 12px 23px 89px;
+}
+
+/* Box Model
+ * padding then border then margin then outline
+ * Single value changes all
+ * 4 Values change top, right, bottom, left in that order
+ * 2 Values change top,bottom and right, left
+ */
 
 #word{
     color: red;
