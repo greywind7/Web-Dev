@@ -40,6 +40,7 @@ p{
     border-color: teal salmon;
     border-style: groove;
     margin: 1%;
+    outline: solid thick palevioletred;
 }
 
 .pink{
@@ -55,6 +56,40 @@ p{
  * 4 Values change top, right, bottom, left in that order
  * 2 Values change top,bottom and right, left
  */
+
+/* There are two ways of creating borders, see box 1 and 2 */
+/* Outlines are similar */
+
+.imgbxo{
+    padding: 20px;
+    background-image: url(images/moun.jpg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    height: 250px;
+    background-size: 100% 100%;
+    margin: 15px;
+    color: white;
+    padding: 10px;
+    outline: turquoise 5px;
+    outline-style: inset;
+}
+
+/* You can make boxes float to the right or left so they only take as much space as required.
+ * Use clear attribute to disallow floating boxes to any direction of a given box
+ */
+
+.imgbxt{
+    background-image: url(images/aud.jpg);
+    height: 200px;
+    background-size: 100px 100px;
+    background-origin: padding-box;
+    padding:10px 100px;
+    background-repeat: no-repeat;
+    border: lightcoral 10px;
+    border-style: double;
+    margin: 2%;
+    float: right;
+}
 
 #word{
     color: red;
