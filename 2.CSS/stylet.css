@@ -1,0 +1,61 @@
+#aud{
+    height: 175px;
+    width: 100px;
+    background: url(images/aud.jpg) -1530px -360px;
+}
+
+ul.l1{
+    list-style-image: url(images/bluesquare.gif);
+}
+
+ul.l2{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.l2 li{
+    background-image: url("images/bluesquare.gif");
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 30px;
+}
+
+.green{
+    background: -moz-linear-gradient(to left,rgb(137, 245, 137),green);
+    /* background-color: rgb(131, 201, 131); */
+    height: 120px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.pink{
+    background-color: hotpink;
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    margin: 5px;
+    -moz-transform: scale(1.3);
+}
+
+.cyan{
+    background: -moz-linear-gradient(to right, cyan,blue);
+    height: 120px;
+    padding: 10px;
+    margin: 5px;
+}
+
+a:link{
+    color: darkgreen;
+}
+a:hover{
+    font-size: 2em;
+}
+
+div.cyan a:visited{
+    color: red;
+}
+
+div.pink a:active{
+    color: darkgreen;
+}

@@ -136,4 +136,9 @@ p{
 }
 .siete{
     text-indent: 250px;
+    font-family: monospace;
+    font-size: 2em;
 }
+
+/* text-align to align text */
+/* Can use multiple arguments for font family to set order */
