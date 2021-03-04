@@ -1,8 +1,8 @@
 #container {
     height: auto;
     width: 800x;
-    margin: 20px 200px;
-    border: grey solid;
+    margin: 0 200px;
+    /* border: grey solid; */
 }
 
 h1 a {
@@ -92,4 +92,26 @@ ul {
 
 #menu ul li:first-child {
     font-weight: 1000;
+}
+
+#intro {
+    height: 280px;
+    background: -moz-linear-gradient(to top, rgb(216, 184, 3), yellow);
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+#intro h3 {
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(252, 4, 4, 0.945);
+}
+
+#intro p {
+    color: brown;
+    font-size: 23px
+}
+
+.sup {
+    font-weight: bold;
 }
