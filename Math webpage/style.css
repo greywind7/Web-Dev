@@ -1,0 +1,47 @@
+#container {
+    height: 150px;
+    width: 800x;
+    margin: 20px 200px;
+    /* border: black solid; */
+}
+
+h1 a {
+    margin-top: 20px;
+    font-weight: 10;
+    font-size: 1.8em;
+    color: cadetblue;
+    text-decoration: none;
+    float: left;
+}
+
+#search {
+    height: 25px;
+    width: 250px;
+    float: left;
+    color: green;
+    margin-right: 30px;
+    background: white url(images/search.png) no-repeat right center;
+}
+
+::placeholder {
+    color: orangered;
+    opacity: 1;
+}
+
+#submit {
+    float: right;
+    height: 30px;
+    width: 120px;
+    background-color: yellow;
+    font-weight: bold;
+    color: red;
+}
+
+#box {
+    margin-top: 8px;
+    padding: 30px 35px;
+    height: auto;
+    width: auto;
+    float: right;
+    background: -moz-linear-gradient(to top, rgb(88, 88, 233), cyan);
+}
