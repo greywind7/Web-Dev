@@ -117,7 +117,7 @@ ul {
 }
 
 .sbar {
-    height: 550px;
+    height: 500px;
     width: 450px;
     border: 1px cyan;
     border-radius: 14px;
@@ -166,5 +166,14 @@ ul {
     background-repeat: no-repeat;
     background-position: 0px center;
     background-position-y: 1px;
-    padding-left: 30px;
+    padding-left: 40px;
+}
+
+#footer {
+    padding: 17px 40px;
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+    color: blanchedalmond;
+    background: -moz-linear-gradient(to left, rgb(129, 189, 129), green);
 }
