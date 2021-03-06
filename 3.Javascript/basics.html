@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>J@V@skr!p7</title>
+        <style>
+            body{
+                background-color: black;
+                color: blanchedalmond;
+            }
+
+            #dragon{
+                height: 550px;
+                width: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="color: aquamarine;">Javascript is gay!</h1>
+        <button onmouseover="alert('You a weeb or what!?')">Push me senpai!</button>
+        <button id="b2">DON'T push me!</button>
+        <div id="dragon"></div>
+        <button id="db">Wanna watch a f*ckin dragon?</button>
+        <br><br>
+        <div id="bored">Estoy abburido ahora. Estoy volando a <a href=''>cosas</a> mas interesantes!<br></div>
+        <button id="grr">NOT UNTIL I SAY SO</button>
+        <script>
+            document.getElementById('b2').onclick = function(){
+                alert("No eres muy simpatico :(");
+            }
+
+            document.getElementById('db').onclick = function(){
+                document.getElementById('dragon').innerHTML =
+                "<img src='images/dragon' height=500 width=800 style='float:left;margin-right:50px;'> <h1 style='padding-top:200px;'>Dracarys Bitch</h1>";
+            }
+
+            document.getElementById('grr').onclick = function(){
+                document.getElementById('bored').style.color = 'red';
+                document.getElementById('bored').style.fontWeight = 'bold';
+                document.getElementById('bored').style.fontFamily = 'Monospace';
+                document.getElementById('bored').style.fontSize = '3em';
+                this.disabled = true;
+                document.getElementById('grr').innerHTML = "<p style='color:green;'>Now its fine</p>";
+            }
+        </script>
+    </body>
+</html>
