@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <style>
         #box1 {
+            padding: 15px;
             height: 250px;
             width: 250px;
             background-color: aquamarine;
             color: black;
-            /* float: left; */
-            /* margin-right: 20px; */
+            float: left;
+            margin-right: 4px;
         }
         
         #box2 {
+            padding: 15px;
+            overflow: hidden;
             height: 250px;
             width: 250px;
             color: black;
@@ -23,6 +26,13 @@
         body {
             background: black;
             color: antiquewhite;
+        }
+        
+        #swap {
+            height: 2em;
+            width: auto;
+            margin: 3px;
+            margin-left: 0;
         }
     </style>
 </head>
@@ -36,11 +46,16 @@
     <div id="box2">
         Bippity dippity<br> Hoppity hop
     </div>
-
-    <button id="swap">I do magik, klik me</button>
+    <button id="swap" onclick="swap()">I do magik, klik me</button>
 </body>
 
 </html>
 
 <script>
+    function swap() {
+        var x = document.getElementById("box1").innerHTML;
+        var y = document.getElementById("box2").innerHTML;
+        document.getElementById('box2').innerHTML = x;
+        document.getElementById('box1').innerHTML = y;
+    }
 </script>
