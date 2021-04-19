@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Objects in JS</title>
+</head>
+
+<body>
+    <p>Sigh, here we go again.</p>
+
+    <script>
+        var laptop = {
+            processor: "ryzen5",
+            ram: 8,
+            color: "red",
+            clock: 2.2
+        };
+
+        window.console.log(laptop);
+        delete laptop.color;
+        window.console.log(laptop);
+
+        var otherLaptop = laptop;
+        // Its basically a reference, not a true variable
+    </script>
+</body>
+
+</html>
