@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basics of any Programming</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: black;
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="test_para">This is some bippity bop stuff kay</p>
+
+    <script>
+        function showMe(x) {
+            document.getElementById("test_para").innerHTML += "<br>" +
+                x;
+        }
+        // This is how arrays are normally created
+        var stu = ["Tin", "Can", "Trash"];
+        showMe(stu);
+
+        // This is creating an array using constructor
+        var sweet = new Array("Halwa", "laddu", "katli");
+        showMe("I like " + sweet);
+
+        // delete can be used to remove a value from an array, but thats that,
+        // The position will remain but data wont be there.
+
+        // splice can be used to delete/add stuff to an array
+        // 1st parameter is the starting position, second no of elements
+        // If no of elemensts are 0, and then you provide arguments then those will be added
+        sweet.splice(2, 0, "DodaBarfi", "Rasmalai");
+        showMe("I also like " + sweet);
+
+        // sort method sorts an array
+        // reverse method reverses and an array
+
+        // split() works much like it does in python
+        var txt = "Abra ka dabra choo choo";
+        var arr = txt.split(' ', 3);
+        showMe(arr)
+    </script>
+</body>
+
+</html>
