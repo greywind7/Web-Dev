@@ -23,6 +23,39 @@
 
         var otherLaptop = laptop;
         // Its basically a reference, not a true variable
+
+        // creating an object using new keyword
+
+        var room = new Object();
+        room.walls = 4;
+        room.coloC = "white";
+        room.wallColor = "Pale";
+        room.windows = 3.2;
+        console.log(room);
+
+        // now we use a constructor to create an object
+
+        function phone(model, processor, ram, clock) {
+            this.model = model;
+            this.processor = processor;
+            this.ram = ram;
+            this.clock = clock;
+            this.overclock = function(x) {
+                this.clock += x;
+            }
+        }
+
+        var opPhone = new phone("OP6T", "SD660", 6, 2.0);
+        console.log(opPhone);
+        opPhone.overclock(0.7);
+        console.log(opPhone.clock);
+
+        opPhone.condition = "New";
+        // This woks but wont be reflected in the all object definitions
+        // This updates the object attributes in all objects
+        phone.prototype.condition = "new";
+
+        console.log(opPhone);
     </script>
 </body>
 
