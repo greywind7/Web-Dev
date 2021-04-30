@@ -32,16 +32,51 @@
     <button id="asub" onclick=findAge()>Find out !!</button>
     <div id="addAg"></div>
 
+    <h3>Now we gonna use switchy witchyyyyy</h3>
+    <div class="labl">Enter your fav i-scream:</div>
+    <input id="ice" type="text">
+    <button id="asub" onclick=findICE()>Find out !!</button>
+    <div id="addICE"></div>
+
     <script>
         // Using if statements, pretty std stuff
         function findAge() {
             var age = document.getElementById("age").value;
             if (age <= 17) {
-                document.getElementById("addAg").innerHTML += "<br>You still a kiddo lol";
+                document.getElementById("addAg").innerHTML = "<br>You still a kiddo lol";
             } else if (age >= 60) {
-                document.getElementById("addAg").innerHTML += "<br>Wassup gramps, enjoyin' retirement?";
+                document.getElementById("addAg").innerHTML = "<br>Wassup gramps, enjoyin' retirement?";
             } else {
-                document.getElementById("addAg").innerHTML += "<br>You be livin your best years workin your ass off huh. Enjoy :p";
+                document.getElementById("addAg").innerHTML = "<br>You be livin your best years workin your ass off huh. Enjoy :p";
+            }
+        }
+
+        // This is how switch works, much like you already know
+        function findICE() {
+            var ice = document.getElementById("ice").value.toLowerCase();
+            switch (ice) {
+                case "vanilla":
+                    document.getElementById("addICE").innerHTML = "<br>People say you are basic but baby you are not. Fuck people!";
+                    break;
+                case "chocolate":
+                    document.getElementById("addICE").innerHTML = "<br>YOU are the basic fuck";
+                    break;
+                case "strawberry":
+                    document.getElementById("addICE").innerHTML = "<br>You may be basic but you got standards";
+                    break;
+                case "butterscotch":
+                    document.getElementById("addICE").innerHTML = "<br>You, sir are a man of class!";
+                    break;
+                case "blackcurrant":
+                    document.getElementById("addICE").innerHTML = "<br>Can I have yo autograph :)";
+                    break;
+                case "tootyfrooty":
+                    document.getElementById("addICE").innerHTML = "<br>You are tooty. You are fruity. Tastyyyyyy";
+                    break;
+
+                default:
+                    document.getElementById("addICE").innerHTML = "<br>Dunno dude, never had your kind :/";
+                    break;
             }
         }
     </script>
