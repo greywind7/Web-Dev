@@ -44,6 +44,12 @@
     <button id="fsub">Les do it</button>
     <div id="addfib"></div>
 
+    <h3>Okay so lets wrap this up quick, I am sleepy</h3>
+    <div class="labl">Your budget?:</div>
+    <input id="moni" type="number">
+    <button id="msub">Go right ahead</button>
+    <div id="addMon"></div>
+
     <script>
         // Using if statements, pretty std stuff
         function findAge() {
@@ -109,6 +115,26 @@
         document.getElementById("fsub").onclick = function() {
             document.getElementById("addfib").innerHTML = "";
             fibS();
+        }
+
+        // Simple while loop
+        function moniMatter() {
+            var bal = document.getElementById("moni").value,
+                num = 0;
+            while (bal > 0) {
+                var mon = Math.floor(Math.random() * 100);
+                if (mon <= bal) {
+                    bal -= mon;
+                    num++;
+                    document.getElementById("addMon").innerHTML += "Amount left:  $" + bal + "\tItem value: $" + mon + "<br>";
+                }
+            }
+            document.getElementById("addMon").innerHTML += "So you got " + num + "items. yayy!!";
+        }
+
+        document.getElementById("msub").onclick = function() {
+            document.getElementById("addMon").innerHTML = "";
+            moniMatter();
         }
     </script>
 </body>
