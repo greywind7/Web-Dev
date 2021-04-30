@@ -35,8 +35,14 @@
     <h3>Now we gonna use switchy witchyyyyy</h3>
     <div class="labl">Enter your fav i-scream:</div>
     <input id="ice" type="text">
-    <button id="asub" onclick=findICE()>Find out !!</button>
+    <button id="isub" onclick=findICE()>Find out !!</button>
     <div id="addICE"></div>
+
+    <h3>Remember that dude Fibonacci?</h3>
+    <div class="labl">Number of terms?</div>
+    <input id="fibo" type="number">
+    <button id="fsub">Les do it</button>
+    <div id="addfib"></div>
 
     <script>
         // Using if statements, pretty std stuff
@@ -78,6 +84,31 @@
                     document.getElementById("addICE").innerHTML = "<br>Dunno dude, never had your kind :/";
                     break;
             }
+        }
+
+        // basic ez for loops
+        function fibS() {
+            var prev = 1,
+                nxt = 1;
+            var max = document.getElementById("fibo").value;
+
+            for (var i = 1; i <= max; i++) {
+                if (i <= 2) {
+                    document.getElementById("addfib").innerHTML += "1 ";
+                } else {
+                    document.getElementById("addfib").innerHTML += (prev + nxt) + " ";
+                    var temp = nxt;
+                    nxt += prev;
+                    prev = temp;
+                }
+                if (i % 10 == 0)
+                    document.getElementById("addfib").innerHTML += "<br>";
+            }
+        }
+
+        document.getElementById("fsub").onclick = function() {
+            document.getElementById("addfib").innerHTML = "";
+            fibS();
         }
     </script>
 </body>
