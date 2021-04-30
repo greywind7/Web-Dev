@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yay I am playing with stuff</title>
+    <style>
+        body {
+            background-color: black;
+            color: blanchedalmond;
+        }
+        
+        h1 {
+            color: rosybrown;
+        }
+        
+        h3 {
+            color: cyan;
+        }
+        
+        .labl {
+            float: left;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Today we gonna play with Conditionals and loops</h1>
+    <h3>This is how you use iffffffs choom</h3>
+    <div class="labl">Enter your age:</div>
+    <input id="age" type="number">
+    <button id="asub" onclick=findAge()>Find out !!</button>
+    <div id="addAg"></div>
+
+    <script>
+        // Using if statements, pretty std stuff
+        function findAge() {
+            var age = document.getElementById("age").value;
+            if (age <= 17) {
+                document.getElementById("addAg").innerHTML += "<br>You still a kiddo lol";
+            } else if (age >= 60) {
+                document.getElementById("addAg").innerHTML += "<br>Wassup gramps, enjoyin' retirement?";
+            } else {
+                document.getElementById("addAg").innerHTML += "<br>You be livin your best years workin your ass off huh. Enjoy :p";
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>
