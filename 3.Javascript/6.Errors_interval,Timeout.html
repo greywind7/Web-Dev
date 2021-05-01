@@ -30,8 +30,10 @@
         Re-Enter password:
     </div>
     <input id="pass2" type="password"><br>
-    <button id="sub" onclick="check()">Find out</button>
+    <button id="sub" onclick="check();clearInterval(myCounter);clearTimeout(reproach)">Find out</button>
     <p id="error"></p>
+
+    <p>Time taken to decide : <span id="counter">0</span>s</p>
 
     <script>
         // This is a default error thingy, for errors you throw you will just get the string
@@ -67,6 +69,17 @@
                 document.getElementById("error").innerHTML = err;
             }
         }
+
+        var x = 0;
+
+        var myCounter = setInterval(function() {
+            x++;
+            document.getElementById("counter").innerHTML = x;
+        }, 1000);
+
+        var reproach = setTimeout(function() {
+            window.alert("Taking your sweet time huh")
+        }, 20000);
     </script>
 </body>
 
