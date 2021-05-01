@@ -1,7 +1,7 @@
 #container {
     height: auto;
-    width: 800x;
-    margin: 0 200px;
+    width: auto;
+    margin: 0 20%;
     /* border: grey solid; */
 }
 
@@ -44,6 +44,7 @@ h1 a {
     width: auto;
     float: right;
     background: -moz-linear-gradient(to top, rgb(88, 88, 233), cyan);
+    background: linear-gradient(to top, rgb(88, 88, 233), cyan);
 }
 
 .clear {
@@ -55,6 +56,7 @@ h1 a {
     height: 75px;
     width: auto;
     background: -moz-linear-gradient(to right, rgb(252, 213, 219), rgb(247, 71, 159));
+    background: linear-gradient(to right, rgb(252, 213, 219), rgb(247, 71, 159));
 }
 
 ul {
@@ -97,6 +99,7 @@ ul {
 #intro {
     height: 280px;
     background: -moz-linear-gradient(to top, rgb(216, 184, 3), yellow);
+    background: linear-gradient(to top, rgb(216, 184, 3), yellow);
     padding: 20px 30px;
     margin-top: 30px;
 }
@@ -137,6 +140,7 @@ ul {
     text-decoration: none;
     color: rgb(168, 11, 207);
     -moz-transition: 0.3s ease font-size;
+    transition: 0.3s ease font-size;
 }
 
 .sbar ul li a:hover {
@@ -176,4 +180,5 @@ ul {
     width: auto;
     color: blanchedalmond;
     background: -moz-linear-gradient(to left, rgb(129, 189, 129), green);
+    background: linear-gradient(to left, rgb(129, 189, 129), green);
 }
